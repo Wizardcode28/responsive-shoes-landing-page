@@ -63,11 +63,33 @@ nav ul li{
     justify-content: center;
     gap: 3rem;
 }
-h1{
+.left h1{
     font-size: 5rem;
     width: 65%;
     font-weight: 900;
 }
+@media (max-width:1232px){
+    .left h1{
+        width: 90%;
+    }
+}
+@media (max-width:916px){
+    .left h1{
+        width: 96%;
+    }
+}
+@media (max-width:868px){
+    .left h1{
+        width: 100%;
+    }
+}
+
+@media (max-width:652px){
+    .left{
+        padding: 1rem;
+    }
+}
+
 .left p{
     font-size: 1.5rem;
     font-weight: 600;
@@ -83,7 +105,7 @@ h1{
 }
 
 .right{
-    width: 15%;
+    width: 34%;
     height: 15%;
     display: flex;
     flex-direction: column;
@@ -91,7 +113,24 @@ h1{
     position: relative;
     top: 70%;
     left: 30%;
-    align-items: center;
+    align-items: start;
+}
+@media (max-width:840px){
+    .left{
+        width: 45%;
+    }
+    .right{
+        /* width: 40%; */
+        left: 15%;
+    }
+}
+@media (max-width:588px){
+    .left{
+        padding: 0rem;
+    }
+    .right{
+        width: 37%;
+    }
 }
 .right h2{
     font-size: 2.5rem;
@@ -172,7 +211,7 @@ h1{
     border-radius: 10px;
 }
 .shoeCard img{
-    width: 150px;
+    width: 100%;
     /* background-color: #f7f1f1; */
     /* box-shadow: 0px 12px 30px grey; */
     filter: drop-shadow(0px 12px 10px grey);
@@ -186,13 +225,34 @@ h1{
     font-weight: 600;
 }
 .shoeCard .arr{
-    /* width: 3rem;
+    width: 3rem;
     height: 3rem;
     position: relative;
     background-color: black;
     border-radius: 50%;
     top: -50%;
-    right: -100%; */
+    right: -100%;
+}
+@media (max-width:1200px){
+    .popular .shoeCard{
+        width: 20%;
+    }
+}
+@media (max-width:1012px){
+    .popular .shoeCard{
+        padding: 1rem;
+    }
+    .shoeCard .what{
+        width: 100%;
+    }
+}
+@media (max-width:808px){
+    .popular .text{
+        width: 100vw;
+    }
+    .popular .shoeCard{
+        /* width: 1000px; */
+    }
 }
 .ready{
     margin: auto;
@@ -221,6 +281,11 @@ h1{
     font-size: 30rem;
     font-weight: 800;
     color: rgba(229, 214, 214, 0.16);
+}
+@media (max-width:760px){
+    .bg-text{
+        display: none;
+    }
 }
 .rightready{
     display: flex;
@@ -328,6 +393,11 @@ h1{
     align-items: center;
     border-radius: 1rem;
     box-shadow: 0.1px 0.1px 3px grey;
+}
+@media (max-width:1000px){
+    .shoecard{
+        width: 45%;
+    }
 }
 .shoecard img{
     width: 100%;
