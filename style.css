@@ -40,6 +40,7 @@ nav ul li{
     font-size: 1.4rem;
     list-style: none;
     font-weight: 600;
+    cursor: pointer;
 }
 .icons{
     display: flex;
@@ -47,6 +48,7 @@ nav ul li{
 }
 .icons img{
     width: 1.7rem;
+    cursor: pointer;
 }
 
 .hamberger img{
@@ -132,7 +134,11 @@ nav ul li{
     width: max-content;
     border: 0px;
     box-shadow: 0px 12px 30px grey;
+    cursor: pointer;
 }
+/* .btn:hover{
+    border: 2px solid #00f;
+} */
 
 .right{
     width: 34%;
@@ -259,6 +265,9 @@ nav ul li{
     padding: 3rem;
     border-radius: 10px;
 }
+.shoeCard:hover{
+    box-shadow: 0px 7px 10px rgb(52, 111, 111);
+}
 .shoeCard img{
     width: 100%;
     /* background-color: #f7f1f1; */
@@ -383,6 +392,7 @@ nav ul li{
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     border: 0px;
+    cursor: pointer;
 }
 .smallimgs{
     display: flex;
@@ -469,6 +479,10 @@ nav ul li{
     align-items: center;
     border-radius: 1rem;
     box-shadow: 0.1px 0.1px 3px grey;
+}
+
+.shoecard:hover{
+    box-shadow: 0px 7px 10px rgb(52, 111, 111);
 }
 @media (max-width:1000px){
     .shoecard{
