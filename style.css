@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid lime;
+    /* outline: 1px solid lime; */
     font-family:'Manrope','Poppins','Segoe UI', Tahoma, Verdana, sans-serif;
 }
 html{
@@ -185,7 +185,7 @@ nav ul li{
 }
 @media (max-width:436px){
     .left{
-        width: 77%;
+        width: 80%;
     }
 }
 .companies{
