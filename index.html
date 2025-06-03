@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="badacontainer">
+    
 <div class="container">
     <div class="header">
          <div class="logo">Slick</div>
@@ -22,8 +23,9 @@
          <div class="icons">
             <img src="images/search.png" alt="">
             <img src="images/cart.png" alt="">
-            <img src="images/lines.png" alt="">
+            <img src="images/lines.png" class="ham" alt="">
          </div>
+         
     </div>
     <div class="hero">
         <div class="left">
@@ -36,7 +38,15 @@
             <div>₹ 3999.00</div>
         </div>
     </div>
+<div class="hamberger">
+            <img src="images/lines.png" class="ham" alt="">
+            <div>Home</div>
+            <div>Shop</div>
+            <div>Collection</div>
+            <div>Customize</div>
 </div>
+</div>
+
     <div class="companies">
         <div class="slide-track">
         <div><img src="images/2.png" alt=""></div>
@@ -89,9 +99,9 @@
             <div class="smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nobis.</div>
             <button class="btn3">Explore</button>
             <div class="smallimgs">
-                <div class="smallimg"><img src="images/6.png" alt=""></div>
-                <div class="smallimg"><img src="images/6.png" alt=""></div>
-                <div class="smallimg"><img src="images/6.png" alt=""></div>
+                <div class="smallimg"><img src="images/new6.png" alt=""></div>
+                <div class="smallimg"><img src="images/new6.png" alt=""></div>
+                <div class="smallimg"><img src="images/new6.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -187,12 +197,12 @@
                     </div>
                 </div>
                 </div>
-                <!-- <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title/><g data-name="Layer 2" id="Layer_2"> <path fill="white" d="M15.31,6.85a1,1,0,0,0,1,1h6.51L6.17,24.5a1,1,0,0,0,1.41,1.41L24.21,9.28v6.46a1,1,0,1,0,2,0v-9a.9.9,0,0,0-.9-.9h-9A1,1,0,0,0,15.31,6.85Z"/></g></svg> -->
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title/><g data-name="Layer 2" id="Layer_2"> <path fill="white" d="M15.31,6.85a1,1,0,0,0,1,1h6.51L6.17,24.5a1,1,0,0,0,1.41,1.41L24.21,9.28v6.46a1,1,0,1,0,2,0v-9a.9.9,0,0,0-.9-.9h-9A1,1,0,0,0,15.31,6.85Z"/></g></svg>
             </div>
         </div>
     </div>
         <div class="bestsell client"> <div></div> <span>Client Testimonial</span> <div></div></div>
-        <div class="testimonial">
+    <div class="testimonial">
             <div class="card">
                 <img src="images/testi.jpg" alt="">
                 <div class="clienttext">
@@ -213,7 +223,7 @@
                     <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nobis, officia repellendus unde harum nihil sint aut corporis mollitia qui!</p>
                 </div>
             </div>
-        </div>
+    </div>
 
     <div class="footer">
         <div class="leftfooter">
@@ -242,6 +252,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    let ham=document.querySelector(".ham")
+    let hamberger=document.querySelector(".hamberger")
+    ham.addEventListener("click",()=>{
+        console.log("hii")
+        if(hamberger.style.display=='') hamberger.style.display="flex"
+        if(hamberger.style.display=='flex') hamberger.style.display="none"
+    })
+</script>
 </body>
 </html>
 

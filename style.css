@@ -48,11 +48,41 @@ nav ul li{
 .icons img{
     width: 1.7rem;
 }
+
+.hamberger img{
+    width: 1.7rem;
+}
+.hamberger{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    color:white;
+    /* gap: 1rem; */
+    /* text-align: start; */
+    position: relative;
+    top: -101%;
+    right: -92%;
+    font-weight: bold;
+}
+.hamberger{
+    display: none;
+}
+@media (max-width:600px){
+    .header nav{
+        display: none;
+    }
+}
+
 .hero{
     width: 100%;
     height: 88%;
     display: flex;
 }
+
 .left{
     text-align: left;
     width: 35%;
@@ -138,6 +168,20 @@ nav ul li{
 }
 .right div{
     font-size: 1.7rem;
+}
+@media (max-width:552px){
+    .left{
+        width:60%
+    }
+}
+@media (max-width:560px){
+    .left p{
+        width: 78%;
+    }
+    .right{
+        left: -5%;
+        width: 50%;
+    }
 }
 .companies{
     width: 100%;
@@ -247,13 +291,28 @@ nav ul li{
     }
 }
 @media (max-width:808px){
+    .popular{
+        flex-direction: column;
+    }
     .popular .text{
-        width: 100vw;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .popular .text p{
+        width: 100%;
     }
     .popular .shoeCard{
-        /* width: 1000px; */
+        width: 60%;
+        aspect-ratio: 1/1;
+        align-items: center;
+        text-align: center;
+    }
+    .shoeCard img{
+        width: 70%;
     }
 }
+
 .ready{
     margin: auto;
     margin-top: 15rem;
@@ -290,9 +349,9 @@ nav ul li{
 .rightready{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    /* width: 25%; */
     z-index: 1;
-    margin-right: 20%;
+    margin-right: 10%;
 }   
 .bigtext{
     font-size: 4rem;
@@ -326,16 +385,21 @@ nav ul li{
 }
 .smallimgs div{
     background-color: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    /* width: 3.5rem;
+    height: 3.5rem; */
     
 }
 .smallimg img{
-    width: 100%;
-    height: 100%;
-    transform: scale(2);
+    width: 3.5rem;
+    height: 3.5rem;
+    /* transform: scale(2); */
     transform-origin: top;
     /* object-fit: contain; */
+}
+@media (max-width:532px){
+    .rightready{
+        margin-right: 0%;
+    }
 }
 .bestsell{
     margin-bottom: 3.5rem;
@@ -353,9 +417,11 @@ nav ul li{
 }
 
 .agebtns{
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 7rem;
+    margin: auto;
     margin-bottom: 6rem;
 }
 .btn4{
@@ -375,6 +441,11 @@ nav ul li{
     font-weight: bold;
     /* width: max-content; */
     transform: scale(1.3);
+}
+@media (max-width:540px){
+    .agebtns{
+        gap: 4rem;
+    }
 }
 .shoes{
     display: flex;
@@ -437,6 +508,7 @@ nav ul li{
 }
 .arrow{
     width: 3rem;
+    padding: 0.7rem;
     position: relative;
     background-color: black;
     border-radius: 50%;
@@ -457,11 +529,11 @@ nav ul li{
 .card{
     width: 35%;
     height: 220px;
-    padding: 5rem;
+    padding: 3rem;
     background-color: rgba(236, 234, 234, 0.89);
     display: flex;
     /* justify-content: start; */
-    gap: 5rem;
+    gap: 3.5rem;
     border: 0.1px solid rgb(135, 130, 130);
     border-radius: 12px;
 }
@@ -473,10 +545,10 @@ nav ul li{
     justify-content: center;
     align-items: end; */
     /* transform: scale(2); */
-    border-radius: 5px;
+    border-radius: 8px;
 }
 .clienttext{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -488,6 +560,37 @@ nav ul li{
 .review{
     font-size: 1rem;
     font-weight: 600;
+}
+@media (max-width:917px){
+    .card{
+        gap: 2.5rem;
+        padding: 2rem;
+        width: 40%;
+    }
+    .clienttext{
+        gap: 2rem;
+    }
+}
+@media (max-width:760px){
+    .testimonial{
+        gap: 4rem;
+    }
+    .card{
+        width: 45%;
+    }
+}
+@media (max-width:672px){
+    .testimonial{
+        flex-direction: column;
+        gap: 10rem;
+    }
+    .card{
+        width: 70%;
+        margin: auto;
+    }
+    .card img{
+        width: 33%;
+    }
 }
 .footer{
     display: flex;
@@ -525,6 +628,12 @@ nav ul li{
     font-weight: 700;
     border-radius: 0.7rem;
 }
+@media (max-width:1300px){
+    .middlefooter input{
+        width: 100%;
+    }
+}
+
 .rightfooter div div{
     font-size: 1.7rem;
     margin-bottom: 2rem;
@@ -541,6 +650,14 @@ nav ul li{
     /* right: -25%; */
     padding-right: 6rem;
 }
+@media (max-width:1010px){
+    .leftfooter{
+        margin-right: 5rem;
+    }
+    .rightfooter{
+        width: 30%;
+    }
+}
 .rightfooter div ul{
     display: flex;
     flex-direction: column;
@@ -550,4 +667,16 @@ nav ul li{
 .rightfooter div ul li{
     list-style: none;
     font-size: 1.2rem;
+}
+@media (max-width:600px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftfooter{
+        width: 70%;
+    }
+    .middlefooter{
+        width: 50%;
+    }
 }
