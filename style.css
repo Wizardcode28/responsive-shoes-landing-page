@@ -136,9 +136,9 @@ nav ul li{
     box-shadow: 0px 12px 30px grey;
     cursor: pointer;
 }
-/* .btn:hover{
-    border: 2px solid #00f;
-} */
+.btn:hover{
+    transform: scale(1.1);
+}
 
 .right{
     width: 34%;
@@ -555,6 +555,9 @@ nav ul li{
     gap: 3.5rem;
     border: 0.1px solid rgb(135, 130, 130);
     border-radius: 12px;
+}
+.card:hover{
+    box-shadow: 0px 7px 10px rgb(52, 111, 111);
 }
 .card img{
     /* width: 100%;
