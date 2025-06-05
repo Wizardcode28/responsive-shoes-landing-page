@@ -61,13 +61,16 @@ nav ul li{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: black;
-    color:white;
+    padding: 2rem 0rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    color:black;
     /* gap: 1rem; */
     /* text-align: start; */
     position: relative;
-    top: -101%;
-    right: -88%;
+    top: -88%;
+    left: 88%;
     font-weight: bold;
 }
 .hamberger{
@@ -78,7 +81,16 @@ nav ul li{
         display: none;
     }
 }
-
+@media (max-width:866px){
+    .hamberger{
+        left: 82%;
+    }
+}
+@media (max-width:570px){
+    .hamberger{
+        left: 71%;
+    }
+}
 .hero{
     width: 100%;
     height: 88%;
@@ -257,7 +269,7 @@ nav ul li{
 .popular .shoeCard{
     background-color: #f7f1f1;
     width: 17%;
-    height: 230px;
+    height: 16.83vw;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -275,7 +287,9 @@ nav ul li{
     filter: drop-shadow(0px 12px 10px grey);
 }
 .shoeCard .what{
-    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .shoeCard .price{
@@ -291,17 +305,36 @@ nav ul li{
     top: -50%;
     right: -100%;
 }
+@media (min-width:1634px){
+    .shoeCard img{
+        /* width: 68%; */
+    }
+    .shoeCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media (max-width:1200px){
     .popular .shoeCard{
         width: 20%;
     }
 }
+
 @media (max-width:1012px){
     .popular .shoeCard{
         padding: 1rem;
     }
     .shoeCard .what{
         width: 100%;
+    }
+}
+@media (max-width:1194px) and (min-width:808px){
+    .popular .text{
+        width: 41%;
+    }
+    .popular .shoeCard{
+        height: 23vw;
     }
 }
 @media (max-width:808px){
@@ -318,15 +351,20 @@ nav ul li{
     }
     .popular .shoeCard{
         width: 60%;
+        height: 32vw;
         aspect-ratio: 1/1;
         align-items: center;
         text-align: center;
     }
     .shoeCard img{
-        width: 70%;
+        width: 50%;
     }
 }
-
+@media (min-width:390px) and (max-width:470px){
+    .popular .shoeCard{
+        height: 149px;
+    }
+}
 .ready{
     margin: auto;
     margin-top: 15rem;
@@ -412,8 +450,15 @@ nav ul li{
     /* object-fit: contain; */
 }
 @media (max-width:532px){
+    .ready .footimg{
+        display: none;
+    }
     .rightready{
+        align-items: center;
         margin-right: 0%;
+    }
+    .rightready .smalltext{
+        text-align: center;
     }
 }
 .bestsell{
@@ -461,6 +506,9 @@ nav ul li{
     .agebtns{
         gap: 4rem;
     }
+    .btn4,.btn5{
+        padding: 0.5rem 1rem;
+    }    
 }
 .shoes{
     display: flex;
@@ -532,7 +580,7 @@ nav ul li{
     background-color: black;
     border-radius: 50%;
     top: -2%;
-    right: -45%;
+    right: -44%;
 }
 .client{
     gap: 3rem;

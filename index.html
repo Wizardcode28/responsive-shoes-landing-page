@@ -23,7 +23,7 @@
          <div class="icons">
             <img src="images/search.png" alt="">
             <img src="images/cart.png" alt="">
-            <img src="images/lines.png" class="ham" alt="">
+            <img src="images/hamburger.svg" class="ham" alt="">
          </div>
          
     </div>
@@ -39,7 +39,6 @@
         </div>
     </div>
 <div class="hamberger">
-            <img src="images/lines.png" class="ham" alt="">
             <div>Home</div>
             <div>Shop</div>
             <div>Collection</div>
@@ -257,8 +256,12 @@
     let ham=document.querySelector(".ham")
     let hamberger=document.querySelector(".hamberger")
     ham.addEventListener("click",()=>{
-        console.log("hii")
-        // hamberger.style.display="flex"
+        if (hamberger.style.display=='none') {
+            console.log("none")
+            hamberger.style.display='flex'}
+        else{
+            console.log("flex")
+            hamberger.style.display='none'}
     })
 </script>
 </body>
